@@ -2,12 +2,10 @@
 
 int main(int argc, char *argv[]) 
 {
-    char str[5];
-    int i = 0;
+    char str[100];
+    
     while(fgets(str, sizeof(str), stdin)){
-        if(0 <= str){printf("%s", str);}
-        
-        
+        if(str<0){printf("%s", str);}
     }
 
     return 0;
