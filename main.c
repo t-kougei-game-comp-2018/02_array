@@ -9,6 +9,8 @@ int main(int argc, char *argv[])
         fgets(str, sizeof(str[i]), stdin);
         printf("%s", str[i]);
         i++;
+        
+        if(i == 5) { break; }
     }
 
     return 0;
