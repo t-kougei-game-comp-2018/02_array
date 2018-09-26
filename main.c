@@ -3,9 +3,12 @@
 int main(int argc, char *argv[]) 
 {
     char str[5];
+    int i = 0;
     
-    while(fgets(str, sizeof(str), stdin)){
-        printf("%s", str);
+    while(1){
+        fgets(str, sizeof(str[i]), stdin);
+        printf("%s", str[i]);
+        i++;
     }
 
     return 0;
