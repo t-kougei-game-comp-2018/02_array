@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
         
         int n = atoi(str);
         if(0<=n){ array[i++]=n; 
-                } else { printf("%d\n",array[-i-1]; 
+                } else { printf("%d\n",array[-i]); 
                                 }
     }
 
