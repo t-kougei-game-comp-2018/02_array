@@ -4,13 +4,10 @@ int main(int argc, char *argv[])
 {
     char str[5];
     int i = 0;
-    
-    while(1){
-        fgets(str, sizeof(str[i]), stdin);
-        printf("%s", str[i]);
-        i++;
+    while(fgets(str, sizeof(str), stdin)){
+        if(0<=str){printf("%s", str);}
         
-        if(i == 5) { break; }
+        
     }
 
     return 0;
