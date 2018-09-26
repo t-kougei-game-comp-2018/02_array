@@ -3,10 +3,16 @@
 int main(int argc, char *argv[]) 
 {
     char str[5];
+    int i = 0;
+    int array[100];
     
     while(fgets(str, sizeof(str), stdin)){
-        if(str<0){printf("%s", -str);}
-        else if(0<=str){ str[]=str; }
+        
+        int n = arg(str);
+        
+        
+        if(0<=n){ array[i++]=n; }
+        else { printf("%d\n",array[-i]; }
     }
 
     return 0;
