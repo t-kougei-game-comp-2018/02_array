@@ -9,8 +9,9 @@ int main(int argc, char *argv[])
     while(fgets(str, sizeof(str), stdin)){
         
         int n = atoi(str);
-        if(0<=n){ array[i++]=n; }
-        else { printf("%d\n",array[-i-1]; }
+        if(0<=n){ array[i++]=n; 
+                } else { printf("%d\n",array[-i-1]; 
+                                }
     }
 
     return 0;
