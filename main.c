@@ -1,23 +1,13 @@
 #include <stdio.h>
 
-int main(void)
+int main(int argc, char *argv[]) 
 {
-	int n[100],i,c;
+    char str[5];
+    
+    while(fgets(str, sizeof(str), stdin)){
+        printf("%s", str);
+    }
 
-	for (i = 0; i < 100; i++) {
-		n[i] = 0;
-	}
-
-	for(i=0;i<100;i++){
-		printf("入力==");
-		scanf_s("%d", &n[i]);
-		if (n[i]<= 0) {
-			c = (-n[i])-1;
-			printf("出力==");
-			printf("%d",n[c]);
-			printf("\n");
-		}
-	}
-
-	return 0;
+    return 0;
 }
+
