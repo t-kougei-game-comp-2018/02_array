@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     int input = 0;
     
     while(fgets(str, sizeof(str), stdin)){
-        printf("%s\n",str);
+        
         
         int n = atoi(str);
             
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
           }
         else
         {
-            printf("%s\n",array[input-1]);
+            printf("%s\n",array[-input-1]);
         }
     }
 
