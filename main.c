@@ -3,7 +3,7 @@
 int main(int argc, char *argv[]) 
 {
     char str[5];
-    int i=0,numbr[100],x;
+    int i=0,number[100],x;
     
     while(fgets(str, sizeof(str), stdin)){
        int x=atoi(str);//整数変換
