@@ -3,10 +3,10 @@
 int main(int argc, char *argv[]) 
 {
     char str[5];
-    int i=0,numebr[100],x;
+    int i=0,numbr[100],x;
     
     while(fgets(str, sizeof(str), stdin)){
-        x=atoi(str);//整数変換
+       int x=atoi(str);//整数変換
         if(0<=x && x<=100 )
         {
             number[i]=x;
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         }
         else if (0>=x && x>=-100)
         {
-           printf("%d\n", number[-x-1]); //-1は0から数え始めるため、1つずらすため
+           printf("%d\n", number[-x-1]); //-1は0から数え始めるため、1つずらした
         }
         else{continue;}
     }
