@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     int array[100],input,i = 0;
     
     while(fgets(str, sizeof(str), stdin)){
-        input = strtol(str);
+        input = atoi(str);
             
         if(input >= 0)
         {
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
         }
         else
         {
-        printf("%s", str[-input]);
+            printf("%s", str[-input]);
         }
         
     }
