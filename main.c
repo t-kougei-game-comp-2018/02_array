@@ -1,24 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h> 
 
 int main(int argc, char *argv[]) 
 {
     char str[5];
     int array[100];
-    int input = 0;
+    int num = 0;
     
     while(fgets(str, sizeof(str), stdin)){
         
-        
-        int n = atoi(str);
-            
+     int input = atoi(str);  
           if( n >= 0)
           {
-              array[input++] = n;
+              array[num++] = input;
           }
         else
         {
-            printf("%s\n",array[-n - 1]);
+            printf("%d\n",array[-input -1]);
         }
     }
 
