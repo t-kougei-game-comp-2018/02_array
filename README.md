@@ -16,7 +16,7 @@
 
 # テスト結果
 
-[![Build Status](https://travis-ci.org/t-kougei-game-comp-2018/02_array.svg?branch=master)](https://travis-ci.org/t-kougei-game-comp-2018/02_array)
+[![Build Status](https://travis-ci.org/TSUKAHARA-Tomohiko/02_array.svg?branch=master)](https://travis-ci.org/TSUKAHARA-Tmohiko/02_array)
 
 # 今回の問題
 
