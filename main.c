@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
         
         int n = atoi(str);
             
-          if( n => 0)
+          if( n >= 0)
           {
               array[input++] = n;
           }
