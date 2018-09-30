@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         }
         else
         {
-            printf("%s", str[-input-1]);
+            printf("%d", array[-input-1]);
         }
         
     }
