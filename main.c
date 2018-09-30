@@ -6,17 +6,18 @@ int main(int argc, char *argv[])
     int array[100],input,i = 0;
     
     while(fgets(str, sizeof(str), stdin)){
-        input = atoi(str);
+        input = strtol(str);
             
         if(input >= 0)
         {
             array[i] = input;
+            i++;
         }
         else
         {
         printf("%s", str[-input]);
         }
-        i++;
+        
     }
 
     return 0;
