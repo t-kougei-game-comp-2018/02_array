@@ -9,13 +9,13 @@ int main(int argc, char *argv[])
     while(fgets(str, sizeof(str), stdin)){
         
      int input = atoi(str);  
-          if( n >= 0)
+          if( input >= 0)
           {
-              array[num++] = input;
+              array[num++] = index;
           }
         else
         {
-            printf("%d\n",array[-input -1]);
+            printf("%d\n",array[-index -1]);
         }
     }
 
