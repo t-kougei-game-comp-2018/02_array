@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h> 
 
 int main(int argc, char *argv[]) 
 {
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
           }
         else
         {
-            printf("%s\n",array[-input-1]);
+            printf("%s\n",array[-n - 1]);
         }
     }
 
