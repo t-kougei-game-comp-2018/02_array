@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     
     while(fgets(str, sizeof(str), stdin))
     {
-     int n = quantity(str);
+     int n = (str);
 		if (0 <= n) 
         {
 			array[nun++] = n;
