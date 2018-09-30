@@ -11,11 +11,11 @@ int main(int argc, char *argv[])
         if(0<=x && x<=100 )
         {
             number[i]=x;
-            i++; //0番目の考慮
+            i++; //0番目を考慮
         }
-        else if (0>=x && x>=-100)
+        else if (0>x && x>=-100)
         {
-           printf("%d\n", number[-x-1]); //-1は0から数え始めるため、1つずらした
+           printf("%d\n", number[-x-1]); 
         }
         else{continue;}
     }
