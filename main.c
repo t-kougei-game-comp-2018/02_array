@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     
     while(fgets(str, sizeof(str), stdin))
     {
-     int n = (str);
+     int n = atoi(str);
 		if (0 <= n) 
         {
 			array[nun++] = n;
