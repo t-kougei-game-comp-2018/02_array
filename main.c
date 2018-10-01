@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         {
             in = str[i];
             in *= (-1);
-            printf("%d\n", stdout[in]);
+            printf("%c\n", stdout[in]);
             j--;
         }
         j++;
