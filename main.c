@@ -21,7 +21,10 @@ int main(int argc, char *argv[])
             stdout[i] = str[i];
         
         else
+        {
             printf("%d\n", stdout[(-1)*str[i]]);
+            i--;
+        }
     }
 
     fclose(stdin);
