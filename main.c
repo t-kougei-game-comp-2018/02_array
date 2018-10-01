@@ -3,24 +3,21 @@
 int main(int argc, char *argv[]) 
 {
     char str[256], stdout[256];
-    int in;
     FILE *stdin;      
    
     stdin = fopen("input1.txt","r");     
     
-    while(fgets(str, sizeof(str), stdin) != NULL){
-        
-        printf("%s", str);
+    while(fgets(str, sizeof(str), stdin) != NULL){        
     }
+    
     for(var i = 0; i < sizeof(str), i++){
      
-        if(str[i] >= 0){
+        if(str[i] >= 0)
             stdout[i] = str[i];
-        }
+        
         else
-            printf("%d", stdout);
+            printf("%d\n", stdout[(-1)*str[i]]);
     }
-    //途中
 
     return 0;
 }
