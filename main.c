@@ -14,7 +14,9 @@ int main(int argc, char *argv[])
         return -1;
     }
     
-    while(fgets(str, sizeof(str), stdin) != NULL){        
+    while(fgets(str, sizeof(str), stdin) != NULL){   
+        
+        printf("%s", str);
     }
     
     for(int i = 0; i < sizeof(str); i++){
