@@ -3,7 +3,7 @@
 int main(int argc, char *argv[]) 
 {
     int j = 0;
-    int in;
+    char in;
     char str[256], stdout[256];
     FILE *stdin;      
    
@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
         }
         else
         {
-            in = (-1) * str[i];
+            in = str[i];
+            in *= (-1);
             printf("%d\n", stdout[in]);
             j--;
         }
