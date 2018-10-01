@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
     int j = 0;
     int i = 0;
     int in;
-    int str[256], stdout[256];
+    char str[5], stdout[101][5];
     FILE *stdin;      
    
     stdin = fopen("input1.txt","r"); 
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
             i++; 
         }     
         else
-             printf("%c", stdout[(-1)*str]);
+             printf("%d", stdout[(-1)*str[i]]);
     }
    
 
