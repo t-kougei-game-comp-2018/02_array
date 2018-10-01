@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
          else {
              for(int i = 0; i < 5; i++){
                 printf("%c", stdout[str[i]][i]);
+             }
         }
     }
    
