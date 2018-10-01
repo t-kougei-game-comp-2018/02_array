@@ -26,11 +26,12 @@ int main(int argc, char *argv[])
         //{
             stdout[i] = str[i]; 
             //j++; 
-        printf("%c", str[i]);
+       
        // }
         
     }
-   
+    printf("%c", str[0]);
+    printf("%c", str[1]);
 
     fclose(stdin);
     
