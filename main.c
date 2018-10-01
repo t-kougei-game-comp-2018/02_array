@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
             i++; 
         }     
         else
-             printf("%c", stdout[(-1)*str[i]]);
+             printf("%s", stdout[0]);
     }
    
 
