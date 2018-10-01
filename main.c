@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     char str[256], stdout[256];
     FILE *stdin;      
    
-    stdin = fopen("input1.txt","r"); 
+    stdin = fopen("input2.txt","r"); 
     if(stdin == NULL){
         printf("ファイル読み込みに失敗しました。\n");
         
@@ -30,8 +30,7 @@ int main(int argc, char *argv[])
        // }
         
     }
-    printf("%c", str[0]);
-    printf("%c", str[1]);
+    printf("%s", stdout);
 
     fclose(stdin);
     
