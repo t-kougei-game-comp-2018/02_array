@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, char *argv[]) 
 {
@@ -19,11 +20,11 @@ int main(int argc, char *argv[])
      
         if(str >= 0)
         {
-            stdout[i] = str; 
+            strcpy(stdout[i],str); 
             i++; 
         }     
         else
-             printf("%d", stdout[(-1)*str[i]]);
+             printf("%c", stdout[(-1)*str[i]]);
     }
    
 
