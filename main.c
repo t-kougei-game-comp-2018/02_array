@@ -24,13 +24,13 @@ int main(int argc, char *argv[])
      
         //if(str[i] >= 0)
         //{
-            stdout[i] = str[i]; 
+            //stdout[i] = str[i]; 
             //j++; 
-       
+        printf("%d", str[i]);
        // }
         
     }
-    printf("%s", stdout);
+   
 
     fclose(stdin);
     
