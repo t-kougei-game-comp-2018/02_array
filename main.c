@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
     
     while(fgets(str, sizeof(str), stdin) != NULL){    
      
-        if(str >= 0)
+        if(str[i] >= 0)
         {
-            strcpy(stdout[i],str); 
+            stdout[i][0] = str[0];
             i++; 
         }     
         else
