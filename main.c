@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
         return -1;
     }
     
-    while(fgets(str, sizeof(str), stdin) != NULL){   
+    while(fscanf(str, sizeof(str), stdin) != EOF){   
         
         printf("%s", str);
     }
@@ -24,15 +24,14 @@ int main(int argc, char *argv[])
         if(str[i] >= 0)
         {
             stdout[j] = str[i]; 
+            j++;
         }
         else
         {
             in = str[i];
             in *= (-1);
-            printf("%c\n", stdout[in]);
-            j--;
+            printf("%d\n", stdout[in]);
         }
-        j++;
     }
 
     fclose(stdin);
