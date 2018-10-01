@@ -3,33 +3,35 @@
 int main(int argc, char *argv[]) 
 {
     int j = 0;
-    int i;
+    int i = 0;
     int in;
-    char str[256], stdout[256];
+    int str[256], stdout[256];
     FILE *stdin;      
    
-    stdin = fopen("input2.txt","r"); 
+    stdin = fopen("input1.txt","r"); 
     if(stdin == NULL){
         printf("ファイル読み込みに失敗しました。\n");
         
         return -1;
     }
     
-    while(fgets(str, sizeof(str), stdin) != NULL){   
-        
-        //printf("%s", str);
+    //while(fgets(str, sizeof(str), stdin) != NULL){   
+    
+    while(fscanf(stdin, "%d", str[i]) != EOF){   
+        i++;
+        printf("%d", str[i]);   
     }
     
-    for(i = 0; i < 7; i++){
+    //for(i = 0; i < 7; i++){
      
         //if(str[i] >= 0)
         //{
             //stdout[i] = str[i]; 
             //j++; 
-        printf("%d", str[i]);
+       // printf("%d", str[i]);
        // }
         
-    }
+  //  }
    
 
     fclose(stdin);
