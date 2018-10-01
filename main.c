@@ -18,13 +18,17 @@ int main(int argc, char *argv[])
     
     while(fgets(str, sizeof(str), stdin) != NULL){    
      
-        if(str[i] >= 0)
+        if(str[0] >= 0)
         {
-            stdout[i][0] = str[0];
-            i++; 
+            for(int i = 0; i < 5; i++){
+                stdout[j][i] = str[i];
+                j++; 
+            }
         }     
-        else
-             printf("%s", stdout[0]);
+         else {
+             for(int i = 0; i < 5; i++){
+                printf("%c", stdout[str[i]][i]);
+        }
     }
    
 
