@@ -25,11 +25,12 @@ int main(int argc, char *argv[])
         //if(str[i] >= 0)
         //{
             stdout[i] = str[i]; 
-            //j++;
+            //j++; 
+        printf("%d", stdout[i]);
        // }
         
     }
-    printf("%s", stdout);
+   
 
     fclose(stdin);
     
