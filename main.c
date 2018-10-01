@@ -2,6 +2,7 @@
 
 int main(int argc, char *argv[]) 
 {
+    int j = 0;
     char str[256], stdout[256];
     FILE *stdin;      
    
@@ -18,13 +19,15 @@ int main(int argc, char *argv[])
     for(int i = 0; i < sizeof(str); i++){
      
         if(str[i] >= 0)
-            stdout[i] = str[i];
-        
+        {
+            stdout[j] = str[i]; 
+        }
         else
         {
             printf("%d\n", stdout[(-1)*str[i]]);
-            i--;
+            j--;
         }
+        j++;
     }
 
     fclose(stdin);
