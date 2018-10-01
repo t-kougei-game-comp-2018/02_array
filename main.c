@@ -14,9 +14,11 @@ int main(int argc, char *argv[])
         return -1;
     }
     
-    while(fscanf(str, sizeof(str), stdin) != EOF){   
+    while(fgets(str, sizeof(str), stdin) != NULL){   
         
         printf("%s", str);
+        printf("%c", str[0]);
+        printf("%c", str[1]);
     }
     
     for(int i = 0; i < sizeof(str); i++){
