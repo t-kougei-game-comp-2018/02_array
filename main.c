@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     while(fgets(str, sizeof(str), stdin) != NULL){        
     }
     
-    for(var i = 0; i < sizeof(str), i++){
+    for(var i = 0; i < sizeof(str); i++){
      
         if(str[i] >= 0)
             stdout[i] = str[i];
