@@ -5,7 +5,12 @@ int main(int argc, char *argv[])
     char str[256], stdout[256];
     FILE *stdin;      
    
-    stdin = fopen("input1.txt","r");     
+    stdin = fopen("input1.txt","r"); 
+    if(stdin == NULL){
+        printf("ファイル読み込みに失敗しました。\n");
+        
+        return -1;
+    }
     
     while(fgets(str, sizeof(str), stdin) != NULL){        
     }
@@ -19,5 +24,7 @@ int main(int argc, char *argv[])
             printf("%d\n", stdout[(-1)*str[i]]);
     }
 
+    fclose(stdin);
+    
     return 0;
 }
