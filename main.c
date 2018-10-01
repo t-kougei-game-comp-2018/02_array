@@ -15,13 +15,17 @@ int main(int argc, char *argv[])
         return -1;
     }
     
-    while(fgets(str, sizeof(str), stdin) != NULL){      
+    while(fgets(str, sizeof(str), stdin) != NULL){    
+     
+        if(str >= 0)
+        {
+            stdout[i] = str; 
+            i++; 
+        }     
+        else
+             printf("%c", stdout[(-1)*str]);
     }
-    
-    
-    printf("%s", str);
-    printf("%c", str[0]);
-    printf("%c", str[1]);
+   
 
     fclose(stdin);
     
