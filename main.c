@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
         //{
             stdout[i] = str[i]; 
             //j++; 
-        printf("%d", str[i]);
+        printf("%c", str[i]);
        // }
         
     }
