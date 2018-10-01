@@ -3,7 +3,7 @@
 int main(int argc, char *argv[]) 
 {
     int j = 0;
-    char in;
+    int in;
     char str[256], stdout[256];
     FILE *stdin;      
    
@@ -17,24 +17,18 @@ int main(int argc, char *argv[])
     while(fgets(str, sizeof(str), stdin) != NULL){   
         
         printf("%s", str);
-        printf("%c", str[0]);
-        printf("%c", str[1]);
     }
     
     for(int i = 0; i < sizeof(str); i++){
      
-        if(str[i] >= 0)
-        {
-            stdout[j] = str[i]; 
-            j++;
-        }
-        else
-        {
-            in = str[i];
-            in *= (-1);
-            printf("%d\n", stdout[in]);
-        }
+        //if(str[i] >= 0)
+        //{
+            stdout[i] = str[i]; 
+            //j++;
+       // }
+        
     }
+    printf("%s", stdout);
 
     fclose(stdin);
     
