@@ -15,24 +15,13 @@ int main(int argc, char *argv[])
         return -1;
     }
     
-    //while(fgets(str, sizeof(str), stdin) != NULL){   
-    
-    while(fscanf(stdin, "%d", str[i]) != EOF){   
-        i++;
-        printf("%d", str[i]);   
+    while(fgets(str, sizeof(str), stdin) != NULL){      
     }
     
-    //for(i = 0; i < 7; i++){
-     
-        //if(str[i] >= 0)
-        //{
-            //stdout[i] = str[i]; 
-            //j++; 
-       // printf("%d", str[i]);
-       // }
-        
-  //  }
-   
+    
+    printf("%s", str);
+    printf("%c", str[0]);
+    printf("%c", str[1]);
 
     fclose(stdin);
     
