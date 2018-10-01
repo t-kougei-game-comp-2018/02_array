@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
         //printf("%s", str);
     }
     
-    for(i = 0; i < sizeof(str); i++){
+    for(i = 0; i < 7; i++){
      
         //if(str[i] >= 0)
         //{
