@@ -13,8 +13,6 @@ int main(int argc, char *argv[])
         }
         else if(-100<=z&&z<0)
             printf("%d\n",a[-z-1]);
-        else
-            continue;
     }
     return 0;
 }
