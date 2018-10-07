@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
             i++;
         }
         else if(-100<=z&&z<0)
-            printf("%d\n",a[z-1]);
+            printf("%d\n",a[-z-1]);
     }
     return 0;
 }
