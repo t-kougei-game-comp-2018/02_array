@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     int i=0,a[100],z;
     
     while(fgets(str, sizeof(str), stdin)){
-        int z=atoi(str);
+        int z= atoi(str);
         if(0<=z&&z<=100){
             a[i]=z;
             i++;
