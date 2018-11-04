@@ -10,13 +10,6 @@ int main(int argc, char *argv[])
 	int stdoutput[101];
 	FILE *stdinput;
 
-	stdinput = fopen("input3.txt", "r");
-	if (stdinput == NULL) {
-		printf("ファイル読み込みに失敗しました。\n");
-
-		return -1;
-	}
-
 	while (fgets(str, sizeof(str), stdinput) != NULL)
 	{
 		input = atoi(str);
