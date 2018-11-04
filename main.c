@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	int stdoutput[101];
 	FILE *stdinput;
 
-	stdinput = fopen("input", "r");
+	stdinput = fopen("input3.txt", "r");
 	if (stdinput == NULL) {
 		printf("ファイル読み込みに失敗しました。\n");
 
