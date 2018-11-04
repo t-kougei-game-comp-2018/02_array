@@ -8,9 +8,8 @@ int main(int argc, char *argv[])
 	int input;
 	char str[5];
 	int stdoutput[101];
-	FILE *stdinput;
 
-	while (fgets(str, sizeof(str), stdinput) != NULL)
+	while (fgets(str, sizeof(str), stdin) != NULL)
 	{
 		input = atoi(str);
 
