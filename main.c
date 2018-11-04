@@ -26,7 +26,5 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	fclose(stdinput);
-
 	return 0;
 }
