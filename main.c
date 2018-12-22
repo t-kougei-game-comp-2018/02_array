@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
 
 	char str[5];
 
-	int array[100];
-	int showLine[100];
+	int array[TOTAL_LINE];
+	int showLine[TOTAL_LINE];
 
 	int *ap = array;
 	int *sp = showLine;
