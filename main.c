@@ -29,7 +29,6 @@ int main(int argc, char *argv[])
 	}
 	*sp = -1;
 
-
 	sp = showLine;
 	while (*sp != -1)
 	{
